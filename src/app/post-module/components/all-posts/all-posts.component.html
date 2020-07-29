@@ -1,0 +1,11 @@
+<hr>
+<router-outlet></router-outlet>
+<hr>
+<div *ngFor="let post of posts">
+  {{post.id}}-
+  {{post.title}}-
+  {{post.body}}
+  <div>
+    <a [routerLink]="[post.id]">to post details</a>
+  </div>
+</div>
